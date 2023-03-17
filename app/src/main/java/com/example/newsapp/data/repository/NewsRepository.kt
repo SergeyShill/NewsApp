@@ -15,9 +15,10 @@ class NewsRepository @Inject constructor(
 
         return if (response.isSuccessful && response.body() != null) {
             val articlesBody = response.body()?.articles ?: emptyList()
-            articlesBody.map { it.toModel() }
+            val list = articlesBody.map { it.toModel() }
+            list
         } else {
-            throw NetworkErrorException(response.errorBody()?.string())
+            throw NetworkErrorException(response.errorBody()?.string() ?: "Unknown error")
         }
     }
 
