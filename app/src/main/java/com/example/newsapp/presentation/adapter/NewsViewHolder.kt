@@ -13,6 +13,9 @@ class NewsViewHolder(private val binding: ItemNewsBinding) : RecyclerView.ViewHo
         binding.date.text = article.publishedAt
 
         binding.imageNews.load(article.urlToImage)
+        binding.card.setOnClickListener(){
+
+        }
 
     }
 

@@ -14,7 +14,7 @@ class NewsResponseBody {
     val totalResults: Int? = null
 
     @Expose
-    @SerializedName("results")
+    @SerializedName("articles")
     val articles: List<ArticleBody>? = null
 
 }
