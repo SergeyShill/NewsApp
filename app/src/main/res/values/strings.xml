@@ -2,4 +2,5 @@
     <string name="app_name">NewsApp</string>
     <string name="new_list_screen">New List Screen</string>
     <string name="detail_screen">Detail screen</string>
+    <string name="detail">Подробнее</string>
 </resources>

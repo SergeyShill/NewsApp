@@ -6,7 +6,9 @@ import com.example.newsapp.data.network.NewsApi
 import com.example.newsapp.mapper.toModel
 import javax.inject.Inject
 
-class NewsRepository @Inject constructor(
+class NewsRepository
+@Inject
+constructor(
     private val newsApi: NewsApi
 ) {
 

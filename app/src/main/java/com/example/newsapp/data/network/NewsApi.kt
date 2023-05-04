@@ -10,7 +10,7 @@ interface NewsApi {
     @GET("everything")
     suspend fun getNews(
         @Query("apiKey") apiKey: String = API_KEY,
-        @Query("q") query: String = "sport",
+        @Query("q") query: String = "Tesla",
 //        @Query("language") language: String = LANG_RU,
         @Query("page") page: Int = 1,
         @Query("pageSize") pageSize: Int = 100
